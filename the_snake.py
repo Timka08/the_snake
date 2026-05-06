@@ -1,6 +1,5 @@
-from random import randint
 import pygame
-
+from random import randint
 
 # Константы
 SCREEN_WIDTH, SCREEN_HEIGHT = 640, 480
@@ -23,7 +22,7 @@ SPEED = 20
 # Инициализация окна
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
-pygame.display.set_caption("Змейка")
+pygame.display.set_caption('Змейка')
 clock = pygame.time.Clock()
 
 
@@ -183,5 +182,5 @@ def main():
             raise SystemExit
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
