@@ -1,5 +1,7 @@
-import pygame
 from random import randint
+
+import pygame
+
 
 # Константы
 SCREEN_WIDTH, SCREEN_HEIGHT = 640, 480
@@ -99,7 +101,7 @@ class Snake(GameObject):
 
         self.positions.insert(0, new_head)
 
-        if len(self.positions) > self.length:
+        if len(self.positions) > self.length + 1:
             self.last = self.positions.pop()
 
     def reset(self):
